@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly budget</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body >
+    <div class="container p-5 d-flex">
+        <div class="col-lg-4">
+            <h5>Håll koll på din ekonomi</h5>
+            <form class="d-flex mt-4" id="budgetform">
+                <div class="col">
+                      <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-user"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Ditt namn" id="firstName" aria-label="firstName" aria-describedby="addon-wrapping">
+                      </div>
+
+
+                      <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"> <i class="fa-solid fa-money-check-dollar"></i></span>
+                        <input type="number" class="form-control" placeholder="Din lön" id="salary" aria-label="salary" aria-describedby="addon-wrapping">
+                      </div>
+                      <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-cart-shopping"></i></span>
+                        <input type="number" class="form-control" placeholder="Shopping" aria-label="shopping" id="shopping" aria-describedby="addon-wrapping">
+                      </div>
+
+
+                      <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-dollar-sign"></i> </span>
+                        <input type="number" class="form-control" placeholder="Sparkonto" id="sparkonto" aria-label="sparkonto" aria-describedby="addon-wrapping">
+                      </div>
+
+
+                      <div class="d-grid gap-2 mt-2">
+                        <button
+                        style="background-color: blueviolet;"
+                            type="button"
+                            name=""
+                            id="btnsumit"
+                            class="btn btn-primary"
+                        >
+                            Visa resultat
+                        </button>
+                      </div>
+                      
+                </div>
+
+                
+            </form>
+            
+        </div>
+        <div class="col-lg-8 px-5">
+            <h5>Konto översikt</h5>
+
+            <div
+                class="table-responsive"
+            >
+                <table
+                    class="table table-light"
+                >
+                    <thead class="thead">
+                        <tr>
+                            <th scope="col">Namn</th>
+                            <th scope="col">Inkomst</th>
+                            <th scope="col">handlat</th>
+                            <th scope="col">Sparkonto</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tableBody">
+                    </tbody>
+                </table>
+                <div class="d-flex">
+                        <strong class="resultAfterAll"></strong>
+                         <span class="px-4" id="time"></span>
+                    </tr>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
